@@ -1,5 +1,6 @@
 import React from "react";
 import { Plane, Hotel, Map, Camera, Headphones, Shield } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Features = () => {
   const features = [
@@ -43,13 +44,25 @@ const Features = () => {
     <section className="pyy-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold tracking-tighter sm:text-5xl"
+          >
             Why Choose Our Travel Services
-          </h2>
-          <p className="mt-4 text-muted-foreground md:text-xl">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="mt-4 text-muted-foreground md:text-xl"
+          >
             Discover the unique features that make your journey with us
             extraordinary
-          </p>
+          </motion.p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (

@@ -1,6 +1,7 @@
 import React from "react";
 import footer from "../assets/footer-pattern.jpg";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -70,9 +71,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center justify-end text-sm">
-          <p>&copy; {new Date().getFullYear()} TripGuru. All rights reserved</p>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-4 pt-8 py-20 mb-6 text-center justify-end text-sm"
+        >
+          <p>
+            &copy; {new Date().getFullYear()} TripGuru. All rights reserved ||
+            Created by <span className="font-bold text-amber-400">Debarup</span>
+          </p>
+        </motion.div>
       </div>
     </footer>
   );

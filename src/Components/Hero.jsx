@@ -6,6 +6,7 @@ import banner1 from "../assets/Hero1.jpg";
 import banner2 from "../assets/Hero3.jpg";
 import banner3 from "../assets/Hero4.jpg";
 import { Search } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const settings = {
@@ -30,7 +31,13 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black opacity-60"></div>
             <div className="relative max-w-7xl mx-auto">
               <div className="flex h-[650px] justify-center items-center lg:pt-0 pt-20">
-                <div className="flex flex-col space-y-8 justify-center items-center text-center px-5 md:px-0">
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  transition={{ duration: 1.5 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="flex flex-col space-y-8 justify-center items-center text-center px-5 md:px-0"
+                >
                   <h1 className="text-white font-bold text-4xl lg:text-6xl">
                     Discover Your Next Adventure
                   </h1>
@@ -41,7 +48,7 @@ const Hero = () => {
                   <button className="bg-red-500 px-3 py-2 text-white rounded-md font-semibold">
                     Start Exploring
                   </button>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -103,7 +110,13 @@ const Hero = () => {
           </div>
         </div>
       </Slider>
-      <div className="bg-white border border-gray-300 shadow-lg rounded-md z-10 left-[15%] absolute hidden lg:block bottom-[15%] items-center justify-center w-[1050px] mx-auto p-4">
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="bg-white border border-gray-300 shadow-lg rounded-md z-10 left-[15%] absolute hidden lg:block bottom-[15%] items-center justify-center w-[1050px] mx-auto p-4"
+      >
         <div className="flex gap-3 items-center">
           <div className="grid gap-5 grid-cols-4 flex-grow">
             <div className="flex flex-col gap-2">
@@ -176,7 +189,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
