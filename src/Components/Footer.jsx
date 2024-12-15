@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h1 className="font-bold text-4xl mb-4">
-              <span className="text-red-500">Trip</span>Buddy
+              <span className="text-red-500">Trip</span>Guru
             </h1>
             <p className="text-sm">
               We're dedicated to making your travel dreams come true with
@@ -27,7 +27,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline hover:text-amber-400">
                   Home
                 </a>
               </li>
@@ -58,7 +58,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>123 Travel Street, City, Country</li>
               <li>Phone: +1 234 567 890</li>
-              <li>Email: info@tripbuddy.com</li>
+              <li>Email: info@tripguru.com</li>
             </ul>
           </div>
           <div>
@@ -71,9 +71,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center justify-end text-sm">
-          <p>
-            &copy; {new Date().getFullYear()} TravelEase. All rights reserved
-          </p>
+          <p>&copy; {new Date().getFullYear()} TripGuru. All rights reserved</p>
         </div>
       </div>
     </footer>

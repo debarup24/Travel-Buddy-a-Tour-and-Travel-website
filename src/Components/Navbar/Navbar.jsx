@@ -14,29 +14,29 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto py-2 px-5 flex bg-transparent justify-between items-center">
           <Link to="/">
             <h1 className="text-2xl text-white font-bold">
-              Trip<span className="text-red-500">Buddy</span>
+              Trip<span className="text-red-500">Guru</span>
             </h1>
           </Link>
           <div className="flex items-center gap-5">
             <nav className="hidden md:flex gap-7">
-              <ul className="flex items-center font-semibold text-white text-xl gap-7">
+              <ul className="flex items-center font-semibold text-white  text-xl gap-7">
                 <Link to="/">
-                  <li>Home</li>
+                  <li className="hover:text-slate-500">Home</li>
                 </Link>
                 <Link to="/about">
-                  <li>About Us</li>
+                  <li className="hover:text-slate-500">About Us</li>
                 </Link>
                 <Link to="/tours">
-                  <li>Tours</li>
+                  <li className="hover:text-slate-500">Tours</li>
                 </Link>
                 <Link to="/gallery">
-                  <li>Gallery</li>
+                  <li className="hover:text-slate-500">Gallery</li>
                 </Link>
                 <Link to="/contact">
-                  <li>Contact</li>
+                  <li className="hover:text-slate-500">Contact</li>
                 </Link>
               </ul>
-              <button className="bg-red-500 text-white px-4 py-1 rounded-md font-semibold">
+              <button className="bg-red-500 text-white px-4 py-1 rounded-md font-semibold hover:bg-red-900">
                 Book Now
               </button>
             </nav>

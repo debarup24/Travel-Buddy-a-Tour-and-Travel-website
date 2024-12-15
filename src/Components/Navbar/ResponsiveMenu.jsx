@@ -44,7 +44,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
             <Link to="#">
               <button
                 onClick={() => setShowMenu(false)}
-                className="bg-red-500 text-white px-4 py-1 rounded-md font-semibold"
+                className="bg-red-500 text-white px-4 py-1 rounded-md font-semibold hover:bg-red-900"
               >
                 Book Now
               </button>
@@ -53,7 +53,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
         </nav>
       </div>
       <div>
-        <h1>Made with ❤️ by Rohit</h1>
+        <h1>Made with ❤️ by Debarup</h1>
       </div>
     </div>
   );
