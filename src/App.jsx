@@ -20,46 +20,46 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  // {
-  //   path: "/tours",
-  //   element: (
-  //     <>
-  //       <Navbar />
-  //       <Tours />
-  //       <Footer />
-  //     </>
-  //   ),
-  // },
-  // {
-  //   path: "/gallery",
-  //   element: (
-  //     <>
-  //       <Navbar />
-  //       <Gallery />
-  //       <Footer />
-  //     </>
-  //   ),
-  // },
-  // {
-  //   path: "/about",
-  //   element: (
-  //     <>
-  //       <Navbar />
-  //       <About />
-  //       <Footer />
-  //     </>
-  //   ),
-  // },
-  // {
-  //   path: "/contact",
-  //   element: (
-  //     <>
-  //       <Navbar />
-  //       <Contact />
-  //       <Footer />
-  //     </>
-  //   ),
-  // },
+  {
+    path: "/tours",
+    element: (
+      <>
+        <Navbar />
+        <Tours />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/gallery",
+    element: (
+      <>
+        <Navbar />
+        <Gallery />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <>
+        <Navbar />
+        <About />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <>
+        <Navbar />
+        <Contact />
+        <Footer />
+      </>
+    ),
+  },
 ]);
 
 const App = () => {
