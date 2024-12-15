@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt1 } from "react-icons/hi";
-import ResponsiveMenu from "./Responsivemenu";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
